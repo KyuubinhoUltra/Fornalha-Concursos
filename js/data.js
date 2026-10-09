@@ -1,0 +1,60 @@
+// Conteúdo inicial de EXEMPLO. Confira sempre com o edital oficial do CBMMA.
+// Para usar o seu material, importe JSON na aba "Dados" (ou edite este arquivo).
+window.DATA = {
+  subjects: [
+    { id:"port", name:"Língua Portuguesa", topics:["Interpretação de texto","Tipologia e gêneros textuais","Ortografia e acentuação","Classes de palavras","Concordância verbal e nominal","Regência e crase","Pontuação","Semântica e figuras de linguagem"] },
+    { id:"mat",  name:"Matemática", topics:["Conjuntos numéricos","Razão e proporção","Regra de três","Porcentagem","Juros simples e compostos","Equações e sistemas","Geometria plana","Estatística básica"] },
+    { id:"rl",   name:"Raciocínio Lógico", topics:["Proposições e conectivos","Tabela-verdade","Equivalências e negações","Silogismos","Sequências","Análise combinatória","Probabilidade"] },
+    { id:"dc",   name:"Direito Constitucional", topics:["Princípios fundamentais","Direitos e garantias fundamentais","Organização do Estado","Administração Pública (art. 37)","Segurança pública (art. 144)","Militares dos Estados"] },
+    { id:"da",   name:"Direito Administrativo", topics:["Princípios","Poderes administrativos","Atos administrativos","Servidores públicos","Responsabilidade civil do Estado"] },
+    { id:"dpm",  name:"Legislação Militar e Penal Militar", topics:["Estatuto dos Militares do MA","Hierarquia e disciplina","Regulamento disciplinar","Crimes militares (noções)"] },
+    { id:"prim", name:"Primeiros Socorros e Atividade Bombeiril", topics:["Avaliação da vítima","RCP e DEA","Hemorragias","Queimaduras","Fraturas e imobilização","Teoria do fogo e classes de incêndio","Extintores"] },
+    { id:"ma",   name:"Conhecimentos sobre o Maranhão", topics:["História do Maranhão","Geografia do Maranhão","Aspectos econômicos e culturais","Atualidades"] }
+  ],
+  questions: [
+    { id:"q1", s:"dc", type:"mc", q:"Segundo o art. 37 da CF/88, NÃO é princípio expresso da Administração Pública:", o:["Legalidade","Impessoalidade","Razoabilidade","Eficiência"], a:2, e:"Os expressos são legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE). Razoabilidade é princípio implícito." },
+    { id:"q2", s:"dc", type:"mc", q:"Segundo o art. 144, §5º, da CF/88, além das atribuições definidas em lei, incumbe aos corpos de bombeiros militares:", o:["Polícia judiciária","Execução de atividades de defesa civil","Policiamento ostensivo de trânsito","Polícia marítima"], a:1, e:"Art. 144, §5º: aos corpos de bombeiros militares incumbe a execução de atividades de defesa civil." },
+    { id:"q3", s:"dc", type:"tf", q:"As polícias militares e os corpos de bombeiros militares são forças auxiliares e reserva do Exército e subordinam-se aos Governadores dos Estados.", a:true, e:"Art. 144, §6º, CF/88." },
+    { id:"q4", s:"dc", type:"mc", q:"Conceder-se-á habeas corpus sempre que alguém sofrer ou se achar ameaçado de sofrer violência ou coação em sua:", o:["Liberdade de locomoção","Liberdade de expressão","Propriedade","Privacidade"], a:0, e:"Art. 5º, LXVIII: o habeas corpus protege a liberdade de locomoção." },
+    { id:"q5", s:"da", type:"tf", q:"A Administração pode anular seus próprios atos quando eivados de vício de legalidade.", a:true, e:"Autotutela — Súmula 473 do STF." },
+    { id:"q6", s:"da", type:"mc", q:"O poder que permite à Administração distribuir e escalonar funções de seus órgãos, estabelecendo relação de subordinação, é o poder:", o:["Disciplinar","Hierárquico","Regulamentar","De polícia"], a:1, e:"O poder hierárquico organiza e escalona os órgãos e agentes, com comando, fiscalização e revisão." },
+    { id:"q7", s:"prim", type:"mc", q:"Em RCP de adulto, a relação compressões:ventilações e a frequência recomendada de compressões são, respectivamente:", o:["15:2 e 60–80/min","30:2 e 100–120/min","30:2 e 60–80/min","15:1 e 120–140/min"], a:1, e:"Diretrizes AHA: 30:2, 100 a 120 compressões/min, profundidade de cerca de 5 a 6 cm em adultos." },
+    { id:"q8", s:"prim", type:"mc", q:"O primeiro procedimento para controlar uma hemorragia externa evidente é:", o:["Aplicar torniquete imediatamente","Compressão direta sobre o ferimento","Lavar com álcool","Elevar a vítima e dar água"], a:1, e:"Compressão direta com pano limpo é a medida inicial; torniquete fica para casos em que ela falha em membros." },
+    { id:"q9", s:"prim", type:"mc", q:"Incêndios em líquidos inflamáveis (gasolina, álcool) pertencem à classe:", o:["A","B","C","D"], a:1, e:"A: sólidos comuns; B: líquidos e gases inflamáveis; C: equipamentos elétricos energizados; D: metais pirofóricos; K: óleos e gorduras de cozinha." },
+    { id:"q10", s:"prim", type:"tf", q:"Em queimaduras leves, recomenda-se resfriar a área com água corrente em temperatura ambiente.", a:true, e:"Resfriar com água corrente por cerca de 10–20 minutos alivia a dor e reduz a lesão. Não se usam gelo, pasta de dente nem manteiga." },
+    { id:"q11", s:"mat", type:"mc", q:"Um produto custava R$ 200,00 e teve aumento de 20%, seguido de desconto de 20%. O preço final é:", o:["R$ 200,00","R$ 192,00","R$ 196,00","R$ 180,00"], a:1, e:"200 × 1,2 = 240; 240 × 0,8 = 192." },
+    { id:"q12", s:"mat", type:"mc", q:"Se 6 bombeiros montam um equipamento em 8 horas, em quanto tempo 12 bombeiros, no mesmo ritmo, o fariam?", o:["2 h","4 h","6 h","16 h"], a:1, e:"Grandezas inversamente proporcionais: 6×8 = 12×x → x = 4 h." },
+    { id:"q13", s:"mat", type:"mc", q:"Capital de R$ 1.000,00 a juros simples de 2% ao mês durante 5 meses rende de juros:", o:["R$ 50,00","R$ 100,00","R$ 110,41","R$ 120,00"], a:1, e:"J = C·i·t = 1000 × 0,02 × 5 = 100." },
+    { id:"q14", s:"rl", type:"mc", q:"A negação de \"Todo bombeiro é corajoso\" é:", o:["Nenhum bombeiro é corajoso","Algum bombeiro não é corajoso","Todo bombeiro não é corajoso","Algum corajoso não é bombeiro"], a:1, e:"A negação de 'todo A é B' é 'existe A que não é B'." },
+    { id:"q15", s:"rl", type:"mc", q:"A proposição 'Se chove, então a rua molha' é equivalente a:", o:["Se a rua molha, então chove","Se não chove, então a rua não molha","Se a rua não molha, então não chove","Chove e a rua não molha"], a:2, e:"A contrapositiva (¬q → ¬p) é equivalente a p → q." },
+    { id:"q16", s:"rl", type:"mc", q:"Quantos anagramas tem a palavra FOGO?", o:["12","24","6","48"], a:0, e:"4!/2! = 12 (a letra O repete duas vezes)." },
+    { id:"q17", s:"port", type:"mc", q:"Assinale a frase com uso CORRETO da crase:", o:["Chegou à tempo.","Fui à Salvador.","Refiro-me à sua proposta.","Começou a ler à noite toda."], a:2, e:"'Referir-se a' + 'a sua proposta' (artigo feminino) → à. Antes de verbo/palavra masculina ou cidade sem artigo não há crase." },
+    { id:"q18", s:"port", type:"mc", q:"Assinale a concordância verbal CORRETA:", o:["Fazem dois anos que ingressou.","Houveram muitos candidatos.","Faz dois anos que ingressou.","Existe muitos candidatos."], a:2, e:"Fazer (tempo) e haver (existir) são impessoais: ficam na 3ª pessoa do singular." },
+    { id:"q19", s:"port", type:"tf", q:"Em 'Os candidatos, que estudaram, foram aprovados', a oração entre vírgulas é explicativa e indica que todos os candidatos estudaram.", a:true, e:"Oração subordinada adjetiva explicativa, separada por vírgulas, generaliza a informação ao antecedente." },
+    { id:"q20", s:"ma", type:"mc", q:"A capital do Maranhão é:", o:["Imperatriz","Caxias","São Luís","Timon"], a:2, e:"São Luís, conhecida como Ilha do Amor e Cidade dos Azulejos; seu centro histórico é Patrimônio Mundial da UNESCO." },
+    { id:"q21", s:"ma", type:"tf", q:"O Parque Nacional dos Lençóis Maranhenses está localizado no Maranhão.", a:true, e:"Região de Barreirinhas, litoral leste do estado." }
+  ],
+  flashcards: [
+    { id:"f1", s:"prim", f:"Triângulo do fogo", b:"Combustível + comburente (oxigênio) + calor. O tetraedro do fogo acrescenta a reação em cadeia." },
+    { id:"f2", s:"prim", f:"Classes de incêndio (A, B, C, D, K)", b:"A: sólidos comuns · B: líquidos/gases inflamáveis · C: elétricos energizados · D: metais combustíveis · K: óleos e gorduras de cozinha." },
+    { id:"f3", s:"prim", f:"Métodos de extinção do fogo", b:"Retirada do material, abafamento, resfriamento e quebra da reação em cadeia." },
+    { id:"f4", s:"prim", f:"RCP adulto: parâmetros", b:"30 compressões : 2 ventilações, 100–120/min, 5–6 cm de profundidade, permitir retorno total do tórax." },
+    { id:"f5", s:"prim", f:"Sequência C-A-B", b:"Circulação (compressões), vias Aéreas, Boa respiração (ventilação)." },
+    { id:"f6", s:"prim", f:"Sinais de choque hipovolêmico", b:"Pele fria e pálida, pulso fraco e rápido, sudorese, sede, agitação ou confusão." },
+    { id:"f7", s:"dc", f:"Princípios da Administração (art. 37)", b:"LIMPE: Legalidade, Impessoalidade, Moralidade, Publicidade, Eficiência." },
+    { id:"f8", s:"dc", f:"Órgãos da segurança pública (art. 144)", b:"Polícia federal, PRF, polícia ferroviária federal, polícias civis, polícias militares e corpos de bombeiros militares, polícias penais." },
+    { id:"f9", s:"dc", f:"Remédios constitucionais", b:"Habeas corpus, habeas data, mandado de segurança (individual e coletivo), mandado de injunção, ação popular." },
+    { id:"f10", s:"dc", f:"Cláusulas pétreas (art. 60, §4º)", b:"Forma federativa de Estado; voto direto, secreto, universal e periódico; separação dos Poderes; direitos e garantias individuais." },
+    { id:"f11", s:"da", f:"Atributos do ato administrativo", b:"Presunção de legitimidade, imperatividade, autoexecutoriedade e tipicidade." },
+    { id:"f12", s:"da", f:"Elementos do ato administrativo", b:"Competência, finalidade, forma, motivo e objeto (mnemônico: COMFIFOROBJ)." },
+    { id:"f13", s:"da", f:"Poderes administrativos", b:"Hierárquico, disciplinar, regulamentar, de polícia (e vinculado/discricionário como atributos)." },
+    { id:"f14", s:"rl", f:"Negação de p → q", b:"p ∧ ¬q (verdadeira apenas quando p é V e q é F, a condicional é falsa)." },
+    { id:"f15", s:"rl", f:"Leis de De Morgan", b:"¬(p ∧ q) ≡ ¬p ∨ ¬q · ¬(p ∨ q) ≡ ¬p ∧ ¬q." },
+    { id:"f16", s:"rl", f:"Equivalências da condicional", b:"p → q ≡ ¬q → ¬p ≡ ¬p ∨ q." },
+    { id:"f17", s:"mat", f:"Desconto/acréscimo sucessivos", b:"Multiplique os fatores: +20% e −20% → 1,2 × 0,8 = 0,96 (queda de 4%)." },
+    { id:"f18", s:"mat", f:"Juros simples × compostos", b:"Simples: M = C(1 + i·t) · Composto: M = C(1 + i)^t." },
+    { id:"f19", s:"port", f:"Verbos impessoais (haver/fazer)", b:"Haver (existir/tempo) e fazer (tempo) ficam no singular: 'Há muitos candidatos', 'Faz dois anos'." },
+    { id:"f20", s:"port", f:"Crase: casos proibidos", b:"Antes de verbos, palavras masculinas, pronomes pessoais, artigos indefinidos, expressões com palavras repetidas." },
+    { id:"f21", s:"ma", f:"Dia do Bombeiro Brasileiro", b:"2 de julho." }
+  ]
+};
